@@ -9,8 +9,8 @@ class Person {
   toJson() {
     return JSON.stringify(this);
   }
-  static fromJson(obj){
-    return JSON.parse(obj)
+  static fromJson(json){
+    return JSON.parse(json)
   }
 }
 
