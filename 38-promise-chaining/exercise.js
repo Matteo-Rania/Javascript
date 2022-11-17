@@ -12,9 +12,9 @@ function firstPromise(isLogged) {
     })
 }
 
-function secondPromise(rand) {
+function secondPromise(id) {
     return new Promise((resolve, reject) => {
-        if (rand > 0.5) {
+        if (id > 0.5) {
             resolve({ "name": "john", "age": 24 })
         }
         else {
