@@ -11,6 +11,6 @@ let p = new Promise((resolve, reject) => {
 });
 p.then((stampa) => {
     console.log(stampa)
-}).catch((stampa) => {
-    console.log(stampa)
+}).catch((err) => {
+    console.log(err)
 })
