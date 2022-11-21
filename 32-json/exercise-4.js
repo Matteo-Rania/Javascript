@@ -5,10 +5,7 @@ const person = {
   age: 25,
 };
 
-let {id,age,...obj} = person;
-str = JSON.stringify({id,age});
-json = {str,obj};
-
+json = JSON.stringify(person,["id","age"])
 
 
 console.log(json); // Should return: { id: 1, age: 25 }
