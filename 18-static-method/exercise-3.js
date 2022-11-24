@@ -3,10 +3,9 @@ class Person {
   constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
-    Person.fromObject();
   }
   static fromObject(object){
-    return object
+    return new Person(object.firstName, object.lastName)
   }
 }
 
