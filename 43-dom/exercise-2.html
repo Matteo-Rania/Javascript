@@ -20,9 +20,14 @@
 </html>
 
 <script>
-  let form = document.querySelectorAll(".form-input")
-  const newForm = Array.from(form);
-  newForm.pop();
-  let all = [...newForm];
-  all.forEach((el)=> console.log(el.value)) 
+  
+  let form = document.querySelectorAll(".form-input[type=text]");
+  form.forEach((el) => console.log(el.value));
+  
+  // other method
+  // let form = document.querySelectorAll(".form-input")
+  // const newForm = Array.from(form);
+  // newForm.pop();
+  // let all = [...newForm];
+  // all.forEach((el)=> console.log(el.value));
 </script>
